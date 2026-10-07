@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Energy Consumption — Appliance Energy Consumption Website</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/PowerIcon.png" alt="Appliance Energy Consumption Website — home">
+        <span class="brand-text">Appliance Energy Consumption</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="televisions.html" class="dropdown-trigger" aria-current="page">Television <span class="dropdown-arrow">&#9662;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../Data%20Exercise%204.1/index.html">SVG</a></li>
+              <li><a href="../Data%20Exercise%204.6/index.html">Scaling Chart</a></li>
+              <li><a href="../Data%20Exercise%205/index.html">D3 Charts Dashboard</a></li>
+              <li><a href="../Data%20Exercise%206/index.html">TV Energy Consumption</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--tight">
+      <div class="wrap">
+        <h1>Televisions &amp; Energy Consumption</h1>
+        <p>
+          Televisions are among the most visible energy users in household spaces.
+          Compare the typical wattage of panel types below or check our visualisations in the menu.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="tv-grid">
+          <article class="tv-card">
+            <span class="tv-watt">60W</span>
+            <h3>43" LED — Everyday Living Room</h3>
+            <p>Compact LED panel suited to a bedroom or second living area with modest power draw.</p>
+          </article>
+          <article class="tv-card">
+            <span class="tv-watt">110W</span>
+            <h3>65" LED — Family Room</h3>
+            <p>Larger LED screen for a main living space; power draw rises with panel dimensions.</p>
+          </article>
+          <article class="tv-card">
+            <span class="tv-watt">150W</span>
+            <h3>55" OLED — Home Theatre</h3>
+            <p>OLED panels draw more power at high peak brightness as each pixel emits light individually.</p>
+          </article>
+          <article class="tv-card">
+            <span class="tv-watt">25W</span>
+            <h3>32" LED — Kitchen / Study</h3>
+            <p>Compact screen with the lowest power draw of the sample set.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Sample specification table</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Screen size</th>
+              <th scope="col">Panel type</th>
+              <th scope="col">Typical power draw</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kitchen / Study set</td><td>32"</td><td>LED</td><td>25W</td></tr>
+            <tr><td>Everyday Living Room set</td><td>43"</td><td>LED</td><td>60W</td></tr>
+            <tr><td>Family Room set</td><td>65"</td><td>LED</td><td>110W</td></tr>
+            <tr><td>Home Theatre set</td><td>55"</td><td>OLED</td><td>150W</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>&copy; <span data-current-year>2026</span> Appliance Energy Consumption Website</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
