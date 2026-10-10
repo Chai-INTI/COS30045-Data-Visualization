@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scaling Chart — Exercises 4.3 to 4.7</title>
+  <link rel="stylesheet" href="../exercise_0_2/assets/css/style.css">
+  <style>
+    .chart-panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(90, 69, 39, 0.08);
+    }
+    .responsive-svg-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 900px;
+    }
+    .responsive-svg-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="../exercise_0_2/index.html">
+        <img src="../exercise_0_2/assets/img/PowerIcon.png" alt="Appliance Energy Consumption Website — home">
+        <span class="brand-text">Appliance Energy Consumption</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../exercise_0_2/index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="../exercise_0_2/televisions.html" class="dropdown-trigger" aria-current="page">Television <span class="dropdown-arrow">&#9662;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../dataexercise_4_1/index.html">SVG</a></li>
+              <li><a href="index.html" aria-current="page">Scaling Chart</a></li>
+              <li><a href="../dataexercise_5/index.html">D3 Charts Dashboard</a></li>
+              <li><a href="../dataexercise_6/index.html">TV Energy Consumption</a></li>
+            </ul>
+          </li>
+          <li><a href="../exercise_0_2/about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--tight" id="dashboard">
+      <div class="wrap">
+        <h1>D3 Scaling Chart</h1>
+        <p>
+          Interactive bar chart built with D3 linear scales (for counts), band scales (for brand categories with inner padding) and right-justified text labels.
+        </p>
+
+        <div class="chart-panel">
+          <h2>D3 Charts Dashboard: TV Brand Listing Distribution</h2>
+          <div class="responsive-svg-container"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>&copy; <span data-current-year>2026</span> Appliance Energy Consumption Website</span>
+      <span>COS30045 Data Visualisation — Exercises 4.3 to 4.7</span>
+    </div>
+  </footer>
+
+  <!-- D3 v7 and Scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="../exercise_0_2/assets/js/script.js"></script>
+</body>
+</html>
