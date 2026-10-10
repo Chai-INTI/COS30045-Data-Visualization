@@ -1,0 +1,167 @@
+/* Dashboard Layout & Theme Consistency */
+.content-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--brown, #5A4527);
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-header h2 {
+  font-size: 1.25rem;
+  color: var(--gold-dark, #C9832A);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-intro {
+  font-size: 1rem;
+  color: var(--brown-deep, #3A2C18);
+  max-width: 850px;
+}
+
+/* 2-Column Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.chart-container {
+  background: var(--white, #FFFDF6);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 15px rgba(90, 69, 39, 0.08);
+  border: 1px solid var(--line, rgba(90, 69, 39, 0.18));
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-container.chart-large {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .chart-container.chart-large {
+    grid-column: span 1;
+  }
+}
+
+.chart-header {
+  margin-bottom: 1rem;
+}
+
+.chart-header h3 {
+  font-size: 1.2rem;
+  color: var(--brown, #5A4527);
+  margin-bottom: 0.3rem;
+}
+
+.chart-description {
+  font-size: 0.9rem;
+  color: var(--brown-deep, #3A2C18);
+  opacity: 0.85;
+}
+
+.chart-content {
+  margin: auto 0;
+  padding: 10px 0;
+}
+
+.responsive-svg-container {
+  width: 100%;
+}
+
+.responsive-svg-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chart-insights {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line, rgba(90, 69, 39, 0.18));
+  font-size: 0.92rem;
+  color: var(--brown-deep, #3A2C18);
+}
+
+/* SVG Chart Elements */
+.axis text {
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 11px;
+  fill: var(--brown-deep, #3A2C18);
+}
+
+.axis path,
+.axis line {
+  stroke: var(--line, rgba(90, 69, 39, 0.25));
+}
+
+.x-axis .tick line {
+  display: none;
+}
+
+.axis-label {
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--brown, #5A4527);
+}
+
+.bar-label {
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--brown, #5A4527);
+  text-anchor: middle;
+}
+
+.bar {
+  fill: var(--gold-dark, #C9832A);
+  transition: opacity 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.85;
+}
+
+.data-line {
+  fill: none;
+  stroke: var(--gold-dark, #C9832A);
+  stroke-width: 2.5px;
+}
+
+.data-circle {
+  fill: var(--gold-dark, #C9832A);
+}
+
+.donut-label {
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--brown-deep, #3A2C18);
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.dashboard-footer {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--brown-deep, #3A2C18);
+  opacity: 0.8;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line, rgba(90, 69, 39, 0.18));
+}
